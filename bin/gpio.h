@@ -1,13 +1,15 @@
+#include <stdint.h>
 #ifndef __GPIO__
 #define __GPIO__
 
-void outputGPIO(unsigned int n);
-void inputGPIO(unsigned int n);
+// Basic GPIO configuration
 
-void setHighGPIO(unsigned int n);
-void setLowGPIO(unsigned int n);
+void outputGPIO(uint8_t);
+void inputGPIO(uint8_t);
+void setHighGPIO(uint8_t);
+void setLowGPIO(uint8_t);
+unsigned int readGPIO(uint8_t);
 
-unsigned int readGPIO(unsigned int n);
-
+// IO_MUX FUNC p60
 
 #endif
