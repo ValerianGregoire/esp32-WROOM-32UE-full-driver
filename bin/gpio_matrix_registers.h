@@ -31,7 +31,7 @@
 #define GPIO_ENABLE1_W1TS_REG (*((unsigned long *)0x3FF44030))
 #define GPIO_ENABLE1_W1TC_REG (*((unsigned long *)0x3FF44034))
 
-// GPIO 0-31 Interrupt registers
+// GPIO 0-31 Interrupt flag registers
 
 #define GPIO_STATUS_REG (*((unsigned long *)0x3FF44044))
 #define GPIO_STATUS_W1TS_REG (*((unsigned long *)0x3FF44048))
@@ -42,7 +42,7 @@
 #define GPIO_ACPU_NMI_INT_REG (*((unsigned long *)0x3FF44064))
 #define GPIO_PCPU_NMI_INT_REG (*((unsigned long *)0x3FF4406C))
 
-// GPIO 32-39 Interrupt registers
+// GPIO 32-39 Interrupt flag registers
 
 #define GPIO_STATUS1_REG (*((unsigned long *)0x3FF44050))
 #define GPIO_STATUS1_W1TS_REG (*((unsigned long *)0x3FF44054))
@@ -55,6 +55,7 @@
 
 // GPIO pin registers
 
+#define GPIO_PIN_REG 0x3FF44088
 #define GPIO_PIN0_REG (*((unsigned long *)0x3FF44088))
 #define GPIO_PIN1_REG (*((unsigned long *)0x3FF4408C))
 #define GPIO_PIN2_REG (*((unsigned long *)0x3FF44090))
@@ -98,6 +99,7 @@
 
 // Peripheral function input selection registers
 
+#define GPIO_FUNC_IN_SEL_CFG_REG 0x3FF44130
 #define GPIO_FUNC0_IN_SEL_CFG_REG (*((unsigned long *)0x3FF44130))
 #define GPIO_FUNC1_IN_SEL_CFG_REG (*((unsigned long *)0x3FF44134))
 #define GPIO_FUNC2_IN_SEL_CFG_REG (*((unsigned long *)0x3FF44138))
@@ -357,6 +359,7 @@
 
 // Peripheral function output selection registers
 
+#define GPIO_FUNC_OUT_SEL_CFG_REG 0x3FF44530
 #define GPIO_FUNC0_OUT_SEL_CFG_REG (*((unsigned long *)0x3FF44530))
 #define GPIO_FUNC1_OUT_SEL_CFG_REG (*((unsigned long *)0x3FF44534))
 #define GPIO_FUNC2_OUT_SEL_CFG_REG (*((unsigned long *)0x3FF44538))

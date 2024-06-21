@@ -17,6 +17,8 @@
 #define IO_MUX_U0TXD_REG (*((unsigned long *)0x3FF49088))
 
 // Pads configuration registers (missing pads 1,3,6-15,28-31)
+
+#define IO_MUX_GPIO_REG 0x3FF49044
 #define IO_MUX_GPIO0_REG (*((unsigned long *)0x3FF49044))
 #define IO_MUX_GPIO2_REG (*((unsigned long *)0x3FF49040))
 #define IO_MUX_GPIO4_REG (*((unsigned long *)0x3FF49048))
@@ -65,6 +67,7 @@
 #define RTCIO_SAR_I2C_IO_REG (*((unsigned long *)0x3FF484C4))
 
 // Pins RTC configuration registers
+#define RTCIO_RTC_GPIO_PIN_REG 0x3FF48428
 #define RTCIO_RTC_GPIO_PIN0_REG (*((unsigned long *)0x3FF48428))
 #define RTCIO_RTC_GPIO_PIN1_REG (*((unsigned long *)0x3FF4842C))
 #define RTCIO_RTC_GPIO_PIN2_REG (*((unsigned long *)0x3FF48430))
@@ -85,6 +88,8 @@
 #define RTCIO_RTC_GPIO_PIN17_REG (*((unsigned long *)0x3FF4846C))
 
 // Touch pads configuration registers
+
+#define RTCIO_TOUCH_PAD_REG 0x3FF48494
 #define RTCIO_TOUCH_PAD0_REG (*((unsigned long *)0x3FF48494))
 #define RTCIO_TOUCH_PAD1_REG (*((unsigned long *)0x3FF48498))
 #define RTCIO_TOUCH_PAD2_REG (*((unsigned long *)0x3FF4849C))
